@@ -1,5 +1,4 @@
 const container = document.getElementById("container");
-
 const resizeColor = document.getElementById("gridSizeColor");
 const resize = document.getElementById("gridSize");
 

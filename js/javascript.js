@@ -12,5 +12,7 @@ for (let i = 0; i < numBoxes; i++) {
 const boxes = document.querySelectorAll(".box");
 
 boxes.forEach((box) => {
-  box.addEventListener("mouseover", (e) => console.log(e.target));
+  box.addEventListener("mouseover", (e) =>
+    document.getElementById(e.target.id).classList.toggle("mouseover")
+  );
 });

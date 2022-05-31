@@ -2,7 +2,11 @@ const container = document.getElementById("container");
 
 const resize = document.getElementById("gridSize");
 
+drawGrid();
+
 let boxes = document.querySelectorAll(".box");
+
+addListeners(boxes);
 
 resize.addEventListener("click", () => {
   let side = parseInt(prompt("Enter squares per side (max 100): ", "64"));
@@ -34,7 +38,3 @@ function addListeners(boxes = NodeList) {
     );
   });
 }
-
-drawGrid();
-
-addListeners(boxes);

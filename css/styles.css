@@ -5,6 +5,18 @@ body {
   height: 100vh;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px 0px 0px;
+}
+
 #container {
   height: 100%;
   display: grid;
